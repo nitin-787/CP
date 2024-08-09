@@ -6,29 +6,25 @@ using namespace std;
 #define RFOR(i,a,b) for(int i=(a); i>=(b); i--)
 #define RFORk(i,a,b,k) for(int i=(a); i>=(b); i-=k)
 
-const int N = 1000000;
-bool pr[N+1];
+const int MAXN = 1e6;
+vector<bool> pr(MAXN+1, true); 
 
 void sieve() {
-    FOR(i,2,N+1) pr[i] = true;
-    int sq = sqrt(N);
-    FOR(i,2,sq+1)
-        if (pr[i])
-            FORk(j,i*i,N+1,i) {
-                pr[j] = false;
-            }
+    pr[0] = pr[1] = false;
+    FOR(i,2,i*i) if (pr[i]) FORk(j,i*i,MAXN+1,i) pr[j] = false; 
 }
 
 void solve() {
     sieve();
+    FOR(i,1,100) if (pr[i]) cout << i << endl;
 }
-
+ 
 int main () {
     ios_base::sync_with_stdio(false);
     cin.tie(NULL);
     cout.tie(NULL);
     int t = 1;
-    cin >> t;
+    // cin >> t;
     while (t--) {
         solve();
     }
