@@ -21,7 +21,7 @@ void sieve() {
 void solve() {
     int k;
     cin >> k;
-    cout << prs[k] << endl;
+    cout << prs[k] << '\n';
 }
 
 int main () {
