@@ -50,3 +50,9 @@ modules.order
 Module.symvers
 Mkfile.old
 dkms.conf
+
+/numberTheory/in.txt
+/numberTheory/out.txt
+
+in.txt
+out.txt
