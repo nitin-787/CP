@@ -6,12 +6,13 @@ using namespace std;
 #define RFOR(i,a,b) for(int i=(a); i>=(b); i--)
 #define RFORk(i,a,b,k) for(int i=(a); i>=(b); i-=k)
 
-const int MAXN = 1e6;
+const int MAXN = 1e8;
 vector<bool> pr(MAXN+1, true); 
 
 void sieve() {
+    int sq = sqrt(MAXN);
     pr[0] = pr[1] = false;
-    FOR(i,2,i*i) if (pr[i]) FORk(j,i*i,MAXN+1,i) pr[j] = false; 
+    FOR(i,2,sq+1) if (pr[i]) FORk(j,i*i,MAXN+1,i) pr[j] = false; 
 }
 
 void solve() {
