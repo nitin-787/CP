@@ -7,7 +7,6 @@ using namespace std;
 #define RFORk(i,a,b,k) for(int i=(a); i>=(b); i-=k)
 #define pb push_back
 #define null nullptr
-#define all(v) v.begin(), v.end()
 typedef long long int ll;
 typedef unsigned long long int ull;
 typedef vector<int> vi;
@@ -15,14 +14,27 @@ typedef vector<ll> vll;
 typedef vector<string> vs;
 typedef vector<ull> vull;
 
-void solve() {}
+void solve() {
+    ull n;
+    cin >> n;
+
+    while (n != 1) {
+        cout << n << " ";
+        if (n & 1) {
+            n = n * 3 + 1;
+        } else {
+            n /= 2;
+        }
+    }
+    cout << n << " ";
+}
 
 int main () {
     ios_base::sync_with_stdio(false);
     cin.tie(NULL);
     cout.tie(NULL);
     int t = 1;
-    cin >> t;
+    // cin >> t;
     while (t-- > 0) {
         solve();
     }
