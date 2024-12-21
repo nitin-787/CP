@@ -1,5 +1,7 @@
+// Author: Nitin
 #include <bits/stdc++.h>
 using namespace std;
+#define nitinFastIO ios_base::sync_with_stdio(false); cin.tie(NULL); cout.tie(NULL)
 #define endl '\n'
 #define FOR(i,a,b) for(int i=(a); i<(b); i++)
 #define FORk(i,a,b,k) for(int i=(a); i<(b); i+=k)
@@ -15,16 +17,15 @@ typedef vector<ll> vll;
 typedef vector<string> vs;
 typedef vector<ull> vull;
 
-void solve() {}
+
+void random_potato() {}
 
 int main () {
-    ios_base::sync_with_stdio(false);
-    cin.tie(NULL);
-    cout.tie(NULL);
+    nitinFastIO;
     int t = 1;
     cin >> t;
     while (t-- > 0) {
-        solve();
+        random_potato();
     }
     return 0;
 }
