@@ -1,4 +1,4 @@
-// Author: Nitin
+// Author: Nitin || CF : random_potato
 #include <bits/stdc++.h>
 using namespace std;
 #define nitinFastIO ios_base::sync_with_stdio(false); cin.tie(NULL); cout.tie(NULL)
@@ -10,12 +10,14 @@ using namespace std;
 #define pb push_back
 #define null nullptr
 #define all(v) v.begin(), v.end()
+#define rem(str,c) str.erase(remove(all(str), c), str.end());
 typedef long long int ll;
 typedef unsigned long long int ull;
 typedef vector<int> vi;
 typedef vector<ll> vll;
 typedef vector<string> vs;
 typedef vector<ull> vull;
+typedef unordered_set<int> usi;
 
 
 void random_potato() {}
