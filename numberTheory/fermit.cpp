@@ -18,14 +18,32 @@ typedef vector<ll> vll;
 typedef vector<string> vs;
 typedef vector<ull> vull;
 typedef unordered_set<int> usi;
-const int MOD = 1e9+7;
+const int MOD = 7;
 
-void random_potato() {}
+// (a^p-1) mod p == 1 if p is prime and a is ! multiple of p
+// generally we take a < p
+ll pow(int a, int b) {
+    if (b==0) return 1;
+    ll ans = pow(a,b/2);
+    ans = (ans * ans) % MOD;
+    if (b % 2 == 1) ans = (ans * a) % MOD;
+    return ans;
+}
+
+ll mod_inv(int a) {
+    return pow(a, MOD-2);
+}
+
+void random_potato() {
+    for (int i=1; i<7; i++) {
+        cout << mod_inv(i) << endl;
+    }
+}
 
 int main () {
     nitinFastIO;
     int t = 1;
-    cin >> t;
+    // cin >> t;
     while (t-- > 0) {
         random_potato();
     }
