@@ -18,6 +18,7 @@ typedef vector<ll> vll;
 typedef vector<string> vs;
 typedef vector<ull> vull;
 typedef unordered_set<int> usi;
+const int MOD =  1e9+7;
 
 
 void random_potato() {}
