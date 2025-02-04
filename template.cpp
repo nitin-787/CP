@@ -1,6 +1,7 @@
-// Author: Nitin || CF : Pechkas69
+// Author: Nitin | CF: Pechkas69
 #include <bits/stdc++.h>
 using namespace std;
+#define nitin 
 #define nitinFastIO ios_base::sync_with_stdio(false); cin.tie(NULL); cout.tie(NULL)
 #define endl '\n'
 #define FOR(i,a,b) for(int i=(a); i<(b); i++)
@@ -20,13 +21,19 @@ typedef vector<ll> vll;
 typedef vector<string> vs;
 typedef vector<ull> vull;
 typedef unordered_set<int> usi;
-typedef vector<pair<int, int>> vp;
+typedef vector<pair<int, int>> vp;  
 const int MOD = 1e9+7;
- 
+
 void solve() {}
- 
+
 int32_t main() {
     nitinFastIO;
+
+    #ifdef nitin
+        freopen("in.txt", "r", stdin);
+        freopen("out.txt", "w", stdout);
+    #endif 
+
     int t = 1;
     cin >> t;
     while (t--) {
